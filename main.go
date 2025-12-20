@@ -52,4 +52,8 @@ func main() {
 	fmt.Println(nums)
 	fmt.Println(conf)
 	fmt.Printf("integer array nums: %d", nums)
+	/*
+		first modification for git commit test
+	*/
+	fmt.Println("first mod for git commit test")
 }
