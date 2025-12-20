@@ -56,4 +56,5 @@ func main() {
 		first modification for git commit test
 	*/
 	fmt.Println("first mod for git commit test")
+	fmt.Println("any difference?")
 }
