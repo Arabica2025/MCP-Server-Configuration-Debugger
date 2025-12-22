@@ -20,7 +20,8 @@ func main() {
 		const: constant (immutable)
 	*/
 	var x int = 10
-	y := 20
+	y := 20 // we can only use := for variables,not for constants(final in Java)
+	// also, we cannot use := when we explicitly specify the data type as we declare vars
 	const name = "mcp"
 	if x > 5 {
 		fmt.Println("x is more than 5!")
@@ -57,4 +58,37 @@ func main() {
 	*/
 	fmt.Println("first mod for git commit test")
 	fmt.Println("any difference?")
+
+	/*
+		Data type in Go: need to tell the compiler the data type when declaring vars
+		Go can infer data types only when we assign a value
+		1. String (most common)
+		2. int (most common)
+
+
+		several types of Integers in Go compared to Java
+		Go			Java
+		int8		byte
+		int16		short
+		int32		int
+		int64		long
+		* uint: (Golang) positive, whole numbers
+	*/
+
+	var nameString string
+	var ageInt int
+	const finalInt uint = 5
+	// ask user for their name (input)
+	//nameString = "Tom"
+
+	// input Scanner (equivalent to Scanner object in Java)
+	// fmt package
+
+	fmt.Scan(&nameString) // <- save user's input value in "nameString" variable <- simply this does not allow taking in user's input
+	// we need pointer that we can store input values (pointer to the memory address of the cell that the actual variable is stored)
+	// memory address(pointer) expression: &(var name) <- put & sign before var name
+	ageInt = 4
+	fmt.Printf("User %v is %v years old now\n", nameString, ageInt)
+	fmt.Printf("nameString type: %T, ageInt type: %T, finalInt type: %T\n", nameString, ageInt, finalInt)
+
 }
