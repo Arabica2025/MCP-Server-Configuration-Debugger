@@ -83,7 +83,7 @@ func main() {
 
 	// input Scanner (equivalent to Scanner object in Java)
 	// fmt package
-
+	fmt.Print("What is your name?: ")
 	fmt.Scan(&nameString) // <- save user's input value in "nameString" variable <- simply this does not allow taking in user's input
 	// we need pointer that we can store input values (pointer to the memory address of the cell that the actual variable is stored)
 	// memory address(pointer) expression: &(var name) <- put & sign before var name
